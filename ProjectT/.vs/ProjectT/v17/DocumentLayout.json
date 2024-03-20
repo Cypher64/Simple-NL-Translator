@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|c:\\users\\akbog\\source\\repos\\scrum_project\\projectt\\projectt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|solutionrelative:projectt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|c:\\users\\akbog\\source\\repos\\scrum_project\\projectt\\projectt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|solutionrelative:projectt\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|c:\\users\\akbog\\source\\repos\\scrum_project\\projectt\\projectt\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}|ProjectT\\ProjectT.csproj|solutionrelative:projectt\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ProjectT\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.Designer.cs",
+              "RelativeToolTip": "ProjectT\\Form1.Designer.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAowLUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:15:19.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjectT\\Form1.cs",
+              "ToolTip": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.cs",
+              "RelativeToolTip": "ProjectT\\Form1.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAAADkAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:15:00.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjectT\\Form1.cs",
+              "ToolTip": "C:\\Users\\akbog\\source\\repos\\Scrum_Project\\ProjectT\\ProjectT\\Form1.cs [Design]",
+              "RelativeToolTip": "ProjectT\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T17:11:45.164Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
