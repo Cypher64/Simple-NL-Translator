@@ -39,8 +39,24 @@ namespace ProjectT
 
             return string.Empty;
         }
+        private void Form1_MouseDoubleClick(object sender, MouseEventArgs mouseEventArgs)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            this.MouseDoubleClick += Form1_MouseDoubleClick;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+         
+
+
             textInput.BorderRadius = 20;
             textOutput.BorderRadius = 20;
             cmbSourceLanguage.BorderRadius = 17;
@@ -79,6 +95,66 @@ namespace ProjectT
         {
 
         }
+
+        private void siticoneCustomGradientPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void siticoneCustomGradientPanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cmbTargetLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+        private void siticoneCirclePictureBox2_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void siticonePictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneCirclePictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void siticoneCirclePictureBox3_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState != FormWindowState.Maximized)
+            {
+                // Збільшити вікно на весь екран
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                // Зменшити вікно до його початкового розміру
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void siticoneCirclePictureBox4_Click(object sender, EventArgs e)
+        {
+            
+                int selectedIndex = cmbSourceLanguage.SelectedIndex;
+                cmbSourceLanguage.SelectedIndex = cmbTargetLanguage.SelectedIndex;
+                cmbTargetLanguage.SelectedIndex = selectedIndex;
+           
+        }
     }
 
     public class TranslationResponse
@@ -99,6 +175,7 @@ namespace ProjectT
         public string TranslatedText { get; set; }
 
     }
+
 
 
 
