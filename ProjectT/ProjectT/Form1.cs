@@ -61,8 +61,8 @@ namespace ProjectT
             textOutput.BorderRadius = 20;
             cmbSourceLanguage.BorderRadius = 17;
             cmbTargetLanguage.BorderRadius = 17;
-            cmbSourceLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de", "it" });
-            cmbTargetLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de", "it" });
+            cmbSourceLanguage.Items.AddRange(new string[] { "English", "Español", "French", "Deutsch", "Italian" });
+            cmbTargetLanguage.Items.AddRange(new string[] { "English", "Español", "French", "Deutsch", "Italian" });
             cmbSourceLanguage.SelectedIndex = 0;
             cmbTargetLanguage.SelectedIndex = 1;
         }
@@ -153,7 +153,15 @@ namespace ProjectT
                 int selectedIndex = cmbSourceLanguage.SelectedIndex;
                 cmbSourceLanguage.SelectedIndex = cmbTargetLanguage.SelectedIndex;
                 cmbTargetLanguage.SelectedIndex = selectedIndex;
-           
+            string tempText = textInput.Text;
+            textInput.Text = textOutput.Text;
+            textOutput.Text = tempText;
+
+        }
+
+        private void textOutput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
@@ -162,7 +170,7 @@ namespace ProjectT
         [JsonProperty("responseStatus")]
         public int ResponseStatus { get; set; }
 
-        [JsonProperty("respinceData")]
+        [JsonProperty("responceData")]
         public TranslationData ResponseData { get; set; }
 
         public string TranslatedText => ResponseData?.TranslatedText;

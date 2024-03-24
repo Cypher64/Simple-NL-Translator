@@ -77,7 +77,6 @@
             this.textInput.Animated = true;
             this.textInput.AutoSize = true;
             this.textInput.BorderRadius = 20;
-            this.textInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textInput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textInput.DefaultText = "";
             this.textInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -146,7 +145,7 @@
             this.textOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textOutput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.textOutput.Location = new System.Drawing.Point(474, 128);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textOutput.MaximumSize = new System.Drawing.Size(720, 480);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
@@ -155,6 +154,7 @@
             this.textOutput.SelectedText = "";
             this.textOutput.Size = new System.Drawing.Size(296, 296);
             this.textOutput.TabIndex = 4;
+            this.textOutput.TextChanged += new System.EventHandler(this.textOutput_TextChanged);
             // 
             // cmbTargetLanguage
             // 
