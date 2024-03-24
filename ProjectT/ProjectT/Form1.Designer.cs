@@ -42,6 +42,7 @@
             this.siticoneCirclePictureBox3 = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
             this.siticoneCirclePictureBox2 = new Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox();
             this.siticoneCustomGradientPanel5 = new Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel();
+            this.btnHelp = new Siticone.Desktop.UI.WinForms.SiticoneGradientCircleButton();
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.siticoneCirclePictureBox3)).BeginInit();
@@ -63,10 +64,10 @@
             this.cmbSourceLanguage.Font = new System.Drawing.Font("Sylfaen", 10.2F, System.Drawing.FontStyle.Bold);
             this.cmbSourceLanguage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cmbSourceLanguage.ItemHeight = 30;
-            this.cmbSourceLanguage.Location = new System.Drawing.Point(131, 69);
-            this.cmbSourceLanguage.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbSourceLanguage.Location = new System.Drawing.Point(175, 85);
+            this.cmbSourceLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSourceLanguage.Name = "cmbSourceLanguage";
-            this.cmbSourceLanguage.Size = new System.Drawing.Size(168, 36);
+            this.cmbSourceLanguage.Size = new System.Drawing.Size(223, 36);
             this.cmbSourceLanguage.TabIndex = 1;
             this.cmbSourceLanguage.SelectedIndexChanged += new System.EventHandler(this.siticoneComboBox2_SelectedIndexChanged);
             // 
@@ -89,15 +90,15 @@
             this.textInput.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.textInput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textInput.Location = new System.Drawing.Point(46, 128);
-            this.textInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textInput.MaximumSize = new System.Drawing.Size(720, 480);
+            this.textInput.Location = new System.Drawing.Point(61, 158);
+            this.textInput.Margin = new System.Windows.Forms.Padding(5);
+            this.textInput.MaximumSize = new System.Drawing.Size(960, 591);
             this.textInput.Multiline = true;
             this.textInput.Name = "textInput";
             this.textInput.PasswordChar = '\0';
             this.textInput.PlaceholderText = "Type in here...";
             this.textInput.SelectedText = "";
-            this.textInput.Size = new System.Drawing.Size(296, 296);
+            this.textInput.Size = new System.Drawing.Size(395, 364);
             this.textInput.TabIndex = 2;
             this.textInput.TextChanged += new System.EventHandler(this.siticoneTextBox1_TextChanged);
             // 
@@ -106,7 +107,7 @@
             this.btnTranslate.Animated = true;
             this.btnTranslate.AutoRoundedCorners = true;
             this.btnTranslate.BackColor = System.Drawing.Color.Transparent;
-            this.btnTranslate.BorderRadius = 25;
+            this.btnTranslate.BorderRadius = 31;
             this.btnTranslate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTranslate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTranslate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -119,10 +120,10 @@
             this.btnTranslate.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.btnTranslate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnTranslate.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-            this.btnTranslate.Location = new System.Drawing.Point(334, 8);
-            this.btnTranslate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTranslate.Location = new System.Drawing.Point(445, 10);
+            this.btnTranslate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTranslate.Name = "btnTranslate";
-            this.btnTranslate.Size = new System.Drawing.Size(137, 53);
+            this.btnTranslate.Size = new System.Drawing.Size(183, 65);
             this.btnTranslate.TabIndex = 3;
             this.btnTranslate.Text = "Translate!";
             this.btnTranslate.Click += new System.EventHandler(this.siticoneGradientButton1_Click);
@@ -145,16 +146,17 @@
             this.textOutput.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.textOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textOutput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textOutput.Location = new System.Drawing.Point(474, 128);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(4);
-            this.textOutput.MaximumSize = new System.Drawing.Size(720, 480);
+            this.textOutput.Location = new System.Drawing.Point(632, 158);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(5);
+            this.textOutput.MaximumSize = new System.Drawing.Size(960, 591);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.PasswordChar = '\0';
             this.textOutput.PlaceholderText = "Translated text...";
             this.textOutput.SelectedText = "";
-            this.textOutput.Size = new System.Drawing.Size(296, 296);
+            this.textOutput.Size = new System.Drawing.Size(395, 364);
             this.textOutput.TabIndex = 4;
+            this.textOutput.TextChanged += new System.EventHandler(this.textOutput_TextChanged);
             // 
             // cmbTargetLanguage
             // 
@@ -170,10 +172,10 @@
             this.cmbTargetLanguage.Font = new System.Drawing.Font("Sylfaen", 10.2F, System.Drawing.FontStyle.Bold);
             this.cmbTargetLanguage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cmbTargetLanguage.ItemHeight = 30;
-            this.cmbTargetLanguage.Location = new System.Drawing.Point(498, 69);
-            this.cmbTargetLanguage.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbTargetLanguage.Location = new System.Drawing.Point(664, 85);
+            this.cmbTargetLanguage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTargetLanguage.Name = "cmbTargetLanguage";
-            this.cmbTargetLanguage.Size = new System.Drawing.Size(168, 36);
+            this.cmbTargetLanguage.Size = new System.Drawing.Size(223, 36);
             this.cmbTargetLanguage.TabIndex = 5;
             this.cmbTargetLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbTargetLanguage_SelectedIndexChanged);
             // 
@@ -186,9 +188,10 @@
             this.siticoneCustomGradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.siticoneCustomGradientPanel1.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneCustomGradientPanel1.FillColor4 = System.Drawing.Color.Teal;
-            this.siticoneCustomGradientPanel1.Location = new System.Drawing.Point(0, 464);
+            this.siticoneCustomGradientPanel1.Location = new System.Drawing.Point(0, 571);
+            this.siticoneCustomGradientPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCustomGradientPanel1.Name = "siticoneCustomGradientPanel1";
-            this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(812, 3);
+            this.siticoneCustomGradientPanel1.Size = new System.Drawing.Size(1083, 4);
             this.siticoneCustomGradientPanel1.TabIndex = 6;
             this.siticoneCustomGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneCustomGradientPanel1_Paint);
             // 
@@ -201,8 +204,9 @@
             this.siticoneCustomGradientPanel2.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneCustomGradientPanel2.FillColor4 = System.Drawing.Color.Teal;
             this.siticoneCustomGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.siticoneCustomGradientPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCustomGradientPanel2.Name = "siticoneCustomGradientPanel2";
-            this.siticoneCustomGradientPanel2.Size = new System.Drawing.Size(3, 464);
+            this.siticoneCustomGradientPanel2.Size = new System.Drawing.Size(4, 571);
             this.siticoneCustomGradientPanel2.TabIndex = 7;
             // 
             // siticoneCustomGradientPanel3
@@ -216,9 +220,10 @@
             this.siticoneCustomGradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.siticoneCustomGradientPanel3.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneCustomGradientPanel3.FillColor4 = System.Drawing.Color.Teal;
-            this.siticoneCustomGradientPanel3.Location = new System.Drawing.Point(3, 0);
+            this.siticoneCustomGradientPanel3.Location = new System.Drawing.Point(4, 0);
+            this.siticoneCustomGradientPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCustomGradientPanel3.Name = "siticoneCustomGradientPanel3";
-            this.siticoneCustomGradientPanel3.Size = new System.Drawing.Size(809, 3);
+            this.siticoneCustomGradientPanel3.Size = new System.Drawing.Size(1079, 4);
             this.siticoneCustomGradientPanel3.TabIndex = 8;
             this.siticoneCustomGradientPanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneCustomGradientPanel3_Paint);
             // 
@@ -230,9 +235,10 @@
             this.siticoneCustomGradientPanel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.siticoneCustomGradientPanel4.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.siticoneCustomGradientPanel4.FillColor4 = System.Drawing.Color.Teal;
-            this.siticoneCustomGradientPanel4.Location = new System.Drawing.Point(809, 3);
+            this.siticoneCustomGradientPanel4.Location = new System.Drawing.Point(1079, 4);
+            this.siticoneCustomGradientPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCustomGradientPanel4.Name = "siticoneCustomGradientPanel4";
-            this.siticoneCustomGradientPanel4.Size = new System.Drawing.Size(3, 461);
+            this.siticoneCustomGradientPanel4.Size = new System.Drawing.Size(4, 567);
             this.siticoneCustomGradientPanel4.TabIndex = 9;
             // 
             // siticoneCirclePictureBox4
@@ -243,10 +249,11 @@
             this.siticoneCirclePictureBox4.FillColor = System.Drawing.Color.Brown;
             this.siticoneCirclePictureBox4.Image = global::ProjectT.Properties.Resources.icons8_данные_в_обоих_направлениях_501;
             this.siticoneCirclePictureBox4.ImageRotate = 0F;
-            this.siticoneCirclePictureBox4.Location = new System.Drawing.Point(382, 69);
+            this.siticoneCirclePictureBox4.Location = new System.Drawing.Point(509, 85);
+            this.siticoneCirclePictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCirclePictureBox4.Name = "siticoneCirclePictureBox4";
             this.siticoneCirclePictureBox4.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox4.Size = new System.Drawing.Size(50, 36);
+            this.siticoneCirclePictureBox4.Size = new System.Drawing.Size(67, 44);
             this.siticoneCirclePictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.siticoneCirclePictureBox4.TabIndex = 14;
             this.siticoneCirclePictureBox4.TabStop = false;
@@ -260,10 +267,11 @@
             this.siticoneCirclePictureBox1.FillColor = System.Drawing.Color.Snow;
             this.siticoneCirclePictureBox1.Image = global::ProjectT.Properties.Resources.icons8_закрыть_окно_241;
             this.siticoneCirclePictureBox1.ImageRotate = 0F;
-            this.siticoneCirclePictureBox1.Location = new System.Drawing.Point(778, 0);
+            this.siticoneCirclePictureBox1.Location = new System.Drawing.Point(1037, 0);
+            this.siticoneCirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCirclePictureBox1.Name = "siticoneCirclePictureBox1";
             this.siticoneCirclePictureBox1.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox1.Size = new System.Drawing.Size(28, 25);
+            this.siticoneCirclePictureBox1.Size = new System.Drawing.Size(37, 31);
             this.siticoneCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.siticoneCirclePictureBox1.TabIndex = 13;
             this.siticoneCirclePictureBox1.TabStop = false;
@@ -277,10 +285,11 @@
             this.siticoneCirclePictureBox3.FillColor = System.Drawing.Color.Snow;
             this.siticoneCirclePictureBox3.Image = global::ProjectT.Properties.Resources.full_display__1_;
             this.siticoneCirclePictureBox3.ImageRotate = 0F;
-            this.siticoneCirclePictureBox3.Location = new System.Drawing.Point(755, 0);
+            this.siticoneCirclePictureBox3.Location = new System.Drawing.Point(1007, 0);
+            this.siticoneCirclePictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCirclePictureBox3.Name = "siticoneCirclePictureBox3";
             this.siticoneCirclePictureBox3.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox3.Size = new System.Drawing.Size(28, 25);
+            this.siticoneCirclePictureBox3.Size = new System.Drawing.Size(37, 31);
             this.siticoneCirclePictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.siticoneCirclePictureBox3.TabIndex = 12;
             this.siticoneCirclePictureBox3.TabStop = false;
@@ -294,10 +303,11 @@
             this.siticoneCirclePictureBox2.FillColor = System.Drawing.Color.Snow;
             this.siticoneCirclePictureBox2.Image = global::ProjectT.Properties.Resources.window_minimize__3_;
             this.siticoneCirclePictureBox2.ImageRotate = 0F;
-            this.siticoneCirclePictureBox2.Location = new System.Drawing.Point(722, -6);
+            this.siticoneCirclePictureBox2.Location = new System.Drawing.Point(963, -7);
+            this.siticoneCirclePictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCirclePictureBox2.Name = "siticoneCirclePictureBox2";
             this.siticoneCirclePictureBox2.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
-            this.siticoneCirclePictureBox2.Size = new System.Drawing.Size(35, 31);
+            this.siticoneCirclePictureBox2.Size = new System.Drawing.Size(47, 38);
             this.siticoneCirclePictureBox2.TabIndex = 11;
             this.siticoneCirclePictureBox2.TabStop = false;
             this.siticoneCirclePictureBox2.Click += new System.EventHandler(this.siticoneCirclePictureBox2_Click);
@@ -316,18 +326,36 @@
             this.siticoneCustomGradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(98)))));
             this.siticoneCustomGradientPanel5.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(98)))));
             this.siticoneCustomGradientPanel5.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(98)))));
-            this.siticoneCustomGradientPanel5.Location = new System.Drawing.Point(3, 3);
+            this.siticoneCustomGradientPanel5.Location = new System.Drawing.Point(4, 4);
+            this.siticoneCustomGradientPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.siticoneCustomGradientPanel5.Name = "siticoneCustomGradientPanel5";
-            this.siticoneCustomGradientPanel5.Size = new System.Drawing.Size(806, 115);
+            this.siticoneCustomGradientPanel5.Size = new System.Drawing.Size(1075, 142);
             this.siticoneCustomGradientPanel5.TabIndex = 15;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHelp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHelp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHelp.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHelp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Location = new System.Drawing.Point(497, 233);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.ShadowDecoration.Mode = Siticone.Desktop.UI.WinForms.Enums.ShadowMode.Circle;
+            this.btnHelp.Size = new System.Drawing.Size(122, 41);
+            this.btnHelp.TabIndex = 16;
+            this.btnHelp.Text = "Help";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(90)))));
-            this.ClientSize = new System.Drawing.Size(812, 467);
+            this.ClientSize = new System.Drawing.Size(1083, 575);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.siticoneCustomGradientPanel5);
             this.Controls.Add(this.siticoneCustomGradientPanel4);
             this.Controls.Add(this.siticoneCustomGradientPanel3);
@@ -339,7 +367,7 @@
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -371,6 +399,7 @@
         private Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox siticoneCirclePictureBox1;
         private Siticone.Desktop.UI.WinForms.SiticoneCirclePictureBox siticoneCirclePictureBox4;
         private Siticone.Desktop.UI.WinForms.SiticoneCustomGradientPanel siticoneCustomGradientPanel5;
+        private Siticone.Desktop.UI.WinForms.SiticoneGradientCircleButton btnHelp;
     }
 }
 

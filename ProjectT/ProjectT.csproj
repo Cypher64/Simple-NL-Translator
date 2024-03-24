@@ -4,14 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55569E3F-86A6-4EFA-80AD-D3252CE5C0A0}</ProjectGuid>
+    <ProjectGuid>{C6373AAD-F7AD-453B-A0B4-E48B4BED338A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ProjectT</RootNamespace>
-    <AssemblyName>ProjectT</AssemblyName>
+    <RootNamespace>ModernTranslatorTutorial</RootNamespace>
+    <AssemblyName>ModernTranslatorTutorial</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -49,13 +49,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Siticone.Desktop.UI, Version=2.1.1.0, Culture=neutral, PublicKeyToken=9683591576b7f0b4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+      <HintPath>packages\Siticone.Desktop.UI.2.1.1\lib\net40\Siticone.Desktop.UI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -95,7 +96,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -112,12 +112,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\application_exit_icon_181084.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\application_exit_icon_181084 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -128,75 +122,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\application_exit_icon_181084 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-свернуть-окно-48.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\window-minimize %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\window-minimize %283%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\photo_2024-03-19_19-56-59.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\photo_2024-03-19_19-56-591.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\photo_2024-03-19_19-56-592.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Дизайн без названия.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Дизайн без названия1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\full-display.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\full-display %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-выход-50 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-выход-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-закрыть-окно-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-закрыть-окно-50 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-закрыть-окно-50 %281%291.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-закрыть-окно-24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-закрыть-окно-241.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-на-всю-ширину-24.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-переключатель-35.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-данные-в-обоих-направлениях-50.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-данные-в-обоих-направлениях-501.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

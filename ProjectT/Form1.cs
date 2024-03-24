@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 
-namespace ProjectT
+namespace ModernTranslatorTutorial
 {
     public partial class Form1 : Form
     {
@@ -31,25 +25,13 @@ namespace ProjectT
 
             string responseJson = await response.Content.ReadAsStringAsync();
             var translationResult = JsonConvert.DeserializeObject<TranslationResponse>(responseJson);
-
+            
             if (translationResult.ResponseStatus == 200)
             {
                 return translationResult.TranslatedText;
             }
 
             return string.Empty;
-        }
-        private void Form1_MouseDoubleClick(object sender, MouseEventArgs mouseEventArgs)
-        {
-            if (this.WindowState == FormWindowState.Maximized)
-            {
-                this.WindowState = FormWindowState.Normal;
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Maximized;
-            }
-            this.MouseDoubleClick += Form1_MouseDoubleClick;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,8 +40,8 @@ namespace ProjectT
             textOutput.BorderRadius = 20;
             cmbSourceLanguage.BorderRadius = 17;
             cmbTargetLanguage.BorderRadius = 17;
-            cmbSourceLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de", "uk" });
-            cmbTargetLanguage.Items.AddRange(new string[] { "en", "es", "fr", "de", "uk" });
+            cmbSourceLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
+            cmbTargetLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
             cmbSourceLanguage.SelectedIndex = 0;
             cmbTargetLanguage.SelectedIndex = 1;
         }
@@ -97,82 +79,8 @@ namespace ProjectT
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
-    private void siticoneTextBox1_TextChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void siticoneComboBox2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void siticoneGradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void siticoneCustomGradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void siticoneCustomGradientPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cmbTargetLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void siticoneCirclePictureBox2_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void siticonePictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void siticoneCirclePictureBox1_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void siticoneCirclePictureBox3_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState != FormWindowState.Maximized)
-            {
-                // Збільшити вікно на весь екран
-                this.WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                // Зменшити вікно до його початкового розміру
-                this.WindowState = FormWindowState.Normal;
-            }
-        }
-
-        private void siticoneCirclePictureBox4_Click(object sender, EventArgs e)
-        {
-            
-                int selectedIndex = cmbSourceLanguage.SelectedIndex;
-                cmbSourceLanguage.SelectedIndex = cmbTargetLanguage.SelectedIndex;
-                cmbTargetLanguage.SelectedIndex = selectedIndex;
-           
-        }
-
-        private void textOutput_TextChanged(object sender, EventArgs e)
+        private void textInput_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -183,21 +91,15 @@ namespace ProjectT
         [JsonProperty("responseStatus")]
         public int ResponseStatus { get; set; }
 
-        [JsonProperty("respinceData")]
+        [JsonProperty("responseData")]
         public TranslationData ResponseData { get; set; }
 
         public string TranslatedText => ResponseData?.TranslatedText;
-
     }
 
     public class TranslationData
     {
         [JsonProperty("translatedText")]
         public string TranslatedText { get; set; }
-
     }
-
-
-
-
 }
