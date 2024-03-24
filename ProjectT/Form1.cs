@@ -14,28 +14,23 @@ namespace ModernTranslatorTutorial
         {
             InitializeComponent();
             httpClient = new HttpClient();
+
+            this.MinimumSize = new System.Drawing.Size(600, 500);
+
+            this.Resize += Form1_Resize;
+
+            this.Load += Form1_Load;
         }
 
-        private async Task<string> TranslateAsync(string text, string sourceLang, string targetLang)
+        private void Form1_Resize(object sender, EventArgs e)
         {
-            string url = $"http://api.mymemory.translated.net/get?q={Uri.EscapeDataString(text)}&langpair={sourceLang}|{targetLang}";
 
-            HttpResponseMessage response = await httpClient.GetAsync(url);
-            response.EnsureSuccessStatusCode();
-
-            string responseJson = await response.Content.ReadAsStringAsync();
-            var translationResult = JsonConvert.DeserializeObject<TranslationResponse>(responseJson);
-            
-            if (translationResult.ResponseStatus == 200)
-            {
-                return translationResult.TranslatedText;
-            }
-
-            return string.Empty;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.Size = new System.Drawing.Size(800, 520);
+
             textInput.BorderRadius = 20;
             textOutput.BorderRadius = 20;
             cmbSourceLanguage.BorderRadius = 17;
@@ -64,10 +59,8 @@ namespace ModernTranslatorTutorial
                 catch (Exception ex)
                 {
                     MessageBox.Show("Translation failed. Please try again. Error: \r\n" + ex);
-                    throw;
                 }
             }
-
             else
             {
                 MessageBox.Show("The max character limit for the input is 500! While your input was: " + CharacterCount);
@@ -82,7 +75,24 @@ namespace ModernTranslatorTutorial
 
         private void textInput_TextChanged(object sender, EventArgs e)
         {
+        }
 
+        private async Task<string> TranslateAsync(string text, string sourceLang, string targetLang)
+        {
+            string url = $"http://api.mymemory.translated.net/get?q={Uri.EscapeDataString(text)}&langpair={sourceLang}|{targetLang}";
+
+            HttpResponseMessage response = await httpClient.GetAsync(url);
+            response.EnsureSuccessStatusCode();
+
+            string responseJson = await response.Content.ReadAsStringAsync();
+            var translationResult = JsonConvert.DeserializeObject<TranslationResponse>(responseJson);
+
+            if (translationResult.ResponseStatus == 200)
+            {
+                return translationResult.TranslatedText;
+            }
+
+            return string.Empty;
         }
     }
 
@@ -103,3 +113,4 @@ namespace ModernTranslatorTutorial
         public string TranslatedText { get; set; }
     }
 }
+
