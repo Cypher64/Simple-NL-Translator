@@ -21,7 +21,6 @@ namespace ModernTranslatorTutorial
 
             this.Load += Form1_Load;
         }
-
         private void Form1_Resize(object sender, EventArgs e)
         {
 
@@ -93,6 +92,11 @@ namespace ModernTranslatorTutorial
             }
 
             return string.Empty;
+        }
+
+        private void textOutput_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
