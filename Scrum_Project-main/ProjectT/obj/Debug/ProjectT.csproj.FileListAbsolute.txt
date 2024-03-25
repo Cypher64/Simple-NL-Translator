@@ -1,0 +1,15 @@
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\ModernTranslatorTutorial.exe.config
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\ModernTranslatorTutorial.exe
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\ModernTranslatorTutorial.pdb
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\Newtonsoft.Json.dll
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\Siticone.Desktop.UI.dll
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\bin\Debug\Newtonsoft.Json.xml
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ProjectT.csproj.AssemblyReference.cache
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ModernTranslatorTutorial.Form1.resources
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ModernTranslatorTutorial.Form2.resources
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ModernTranslatorTutorial.Properties.Resources.resources
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ProjectT.csproj.GenerateResource.cache
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ProjectT.csproj.CoreCompileInputs.cache
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ProjectT.csproj.Up2Date
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ModernTranslatorTutorial.exe
+C:\Users\akbog\Desktop\Scrum_Project-main\ProjectT\obj\Debug\ModernTranslatorTutorial.pdb
