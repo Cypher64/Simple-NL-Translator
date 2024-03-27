@@ -3,6 +3,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Drawing;
+
 
 namespace ModernTranslatorTutorial
 {
@@ -39,8 +41,10 @@ namespace ModernTranslatorTutorial
             cmbTargetLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
             cmbSourceLanguage.SelectedIndex = 0;
             cmbTargetLanguage.SelectedIndex = 1;
+
         }
 
+        
         private async void btnTranslate_Click(object sender, EventArgs e)
         {
             int CharacterCount = 0;
