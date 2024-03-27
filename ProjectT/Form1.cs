@@ -3,9 +3,12 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Newtonsoft.Json;
+using System.Drawing;
+
 
 namespace ModernTranslatorTutorial
 {
+
     public partial class Form1 : Form
     {
         private HttpClient httpClient;
@@ -38,8 +41,10 @@ namespace ModernTranslatorTutorial
             cmbTargetLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
             cmbSourceLanguage.SelectedIndex = 0;
             cmbTargetLanguage.SelectedIndex = 1;
+
         }
 
+        
         private async void btnTranslate_Click(object sender, EventArgs e)
         {
             int CharacterCount = 0;
@@ -98,6 +103,31 @@ namespace ModernTranslatorTutorial
         {
 
         }
+
+        private void cmbTargetLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticonePictureBox1_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = cmbSourceLanguage.SelectedIndex;
+            cmbSourceLanguage.SelectedIndex = cmbTargetLanguage.SelectedIndex;
+            cmbTargetLanguage.SelectedIndex = selectedIndex;
+            string tempText = textInput.Text;
+            textInput.Text = textOutput.Text;
+            textOutput.Text = tempText;
+        }
+
+        private void cmbSourceLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class TranslationResponse
@@ -116,5 +146,6 @@ namespace ModernTranslatorTutorial
         [JsonProperty("translatedText")]
         public string TranslatedText { get; set; }
     }
+
 }
 

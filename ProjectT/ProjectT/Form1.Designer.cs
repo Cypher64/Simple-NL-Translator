@@ -78,7 +78,6 @@
             this.textInput.Animated = true;
             this.textInput.AutoSize = true;
             this.textInput.BorderRadius = 20;
-            this.textInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textInput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textInput.DefaultText = "";
             this.textInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -146,9 +145,15 @@
             this.textOutput.Font = new System.Drawing.Font("Sylfaen", 12F, System.Drawing.FontStyle.Bold);
             this.textOutput.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textOutput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+<<<<<<< HEAD
             this.textOutput.Location = new System.Drawing.Point(632, 158);
             this.textOutput.Margin = new System.Windows.Forms.Padding(5);
             this.textOutput.MaximumSize = new System.Drawing.Size(960, 591);
+=======
+            this.textOutput.Location = new System.Drawing.Point(474, 128);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textOutput.MaximumSize = new System.Drawing.Size(720, 480);
+>>>>>>> 44274e4815f58fdb6ad04aae17ee9a1bd99d104a
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.PasswordChar = '\0';

@@ -36,6 +36,11 @@ namespace ModernTranslatorTutorial
             this.cmbTargetLanguage = new Siticone.Desktop.UI.WinForms.SiticoneComboBox();
             this.btnTranslate = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
             this.btnHelp = new Siticone.Desktop.UI.WinForms.SiticoneGradientButton();
+            this.siticonePictureBox1 = new Siticone.Desktop.UI.WinForms.SiticonePictureBox();
+            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).BeginInit();
+            this.toolStripContainer1.ContentPanel.SuspendLayout();
+            this.toolStripContainer1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textInput
@@ -43,8 +48,8 @@ namespace ModernTranslatorTutorial
             this.textInput.Animated = true;
             this.textInput.AutoRoundedCorners = true;
             this.textInput.AutoSize = true;
-            this.textInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.textInput.BorderRadius = 138;
+            this.textInput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
+            this.textInput.BorderRadius = 154;
             this.textInput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textInput.DefaultText = "";
             this.textInput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -56,14 +61,14 @@ namespace ModernTranslatorTutorial
             this.textInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.textInput.ForeColor = System.Drawing.Color.White;
             this.textInput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textInput.Location = new System.Drawing.Point(13, 70);
+            this.textInput.Location = new System.Drawing.Point(13, 154);
             this.textInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textInput.Multiline = true;
             this.textInput.Name = "textInput";
             this.textInput.PasswordChar = '\0';
             this.textInput.PlaceholderText = "Type in here...";
             this.textInput.SelectedText = "";
-            this.textInput.Size = new System.Drawing.Size(338, 278);
+            this.textInput.Size = new System.Drawing.Size(359, 310);
             this.textInput.TabIndex = 0;
             this.textInput.TextChanged += new System.EventHandler(this.textInput_TextChanged);
             // 
@@ -72,8 +77,8 @@ namespace ModernTranslatorTutorial
             this.textOutput.Animated = true;
             this.textOutput.AutoRoundedCorners = true;
             this.textOutput.AutoSize = true;
-            this.textOutput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
-            this.textOutput.BorderRadius = 138;
+            this.textOutput.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(221)))), ((int)(((byte)(226)))));
+            this.textOutput.BorderRadius = 154;
             this.textOutput.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textOutput.DefaultText = "";
             this.textOutput.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -82,17 +87,17 @@ namespace ModernTranslatorTutorial
             this.textOutput.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.textOutput.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
             this.textOutput.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.textOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textOutput.ForeColor = System.Drawing.Color.White;
             this.textOutput.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.textOutput.Location = new System.Drawing.Point(439, 70);
-            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textOutput.Location = new System.Drawing.Point(418, 154);
+            this.textOutput.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.textOutput.Multiline = true;
             this.textOutput.Name = "textOutput";
             this.textOutput.PasswordChar = '\0';
             this.textOutput.PlaceholderText = "Translated Text...";
             this.textOutput.SelectedText = "";
-            this.textOutput.Size = new System.Drawing.Size(329, 278);
+            this.textOutput.Size = new System.Drawing.Size(359, 310);
             this.textOutput.TabIndex = 1;
             this.textOutput.TextChanged += new System.EventHandler(this.textOutput_TextChanged);
             // 
@@ -100,9 +105,8 @@ namespace ModernTranslatorTutorial
             // 
             this.cmbSourceLanguage.AutoRoundedCorners = true;
             this.cmbSourceLanguage.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSourceLanguage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.cmbSourceLanguage.BorderRadius = 17;
-            this.cmbSourceLanguage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.cmbSourceLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbSourceLanguage.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSourceLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSourceLanguage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -111,18 +115,19 @@ namespace ModernTranslatorTutorial
             this.cmbSourceLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cmbSourceLanguage.ForeColor = System.Drawing.Color.Silver;
             this.cmbSourceLanguage.ItemHeight = 30;
-            this.cmbSourceLanguage.Location = new System.Drawing.Point(101, 27);
+            this.cmbSourceLanguage.Location = new System.Drawing.Point(141, 35);
+            this.cmbSourceLanguage.Margin = new System.Windows.Forms.Padding(4);
             this.cmbSourceLanguage.Name = "cmbSourceLanguage";
             this.cmbSourceLanguage.Size = new System.Drawing.Size(170, 36);
             this.cmbSourceLanguage.TabIndex = 2;
+            this.cmbSourceLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbSourceLanguage_SelectedIndexChanged);
             // 
             // cmbTargetLanguage
             // 
             this.cmbTargetLanguage.AutoRoundedCorners = true;
             this.cmbTargetLanguage.BackColor = System.Drawing.Color.Transparent;
-            this.cmbTargetLanguage.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(80)))));
             this.cmbTargetLanguage.BorderRadius = 17;
-            this.cmbTargetLanguage.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.cmbTargetLanguage.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbTargetLanguage.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbTargetLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTargetLanguage.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -131,27 +136,33 @@ namespace ModernTranslatorTutorial
             this.cmbTargetLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.cmbTargetLanguage.ForeColor = System.Drawing.Color.Silver;
             this.cmbTargetLanguage.ItemHeight = 30;
-            this.cmbTargetLanguage.Location = new System.Drawing.Point(513, 27);
+            this.cmbTargetLanguage.Location = new System.Drawing.Point(477, 35);
+            this.cmbTargetLanguage.Margin = new System.Windows.Forms.Padding(4);
             this.cmbTargetLanguage.Name = "cmbTargetLanguage";
             this.cmbTargetLanguage.Size = new System.Drawing.Size(170, 36);
             this.cmbTargetLanguage.TabIndex = 3;
+            this.cmbTargetLanguage.SelectedIndexChanged += new System.EventHandler(this.cmbTargetLanguage_SelectedIndexChanged);
             // 
             // btnTranslate
             // 
             this.btnTranslate.Animated = true;
             this.btnTranslate.AutoRoundedCorners = true;
             this.btnTranslate.BorderRadius = 21;
-            this.btnTranslate.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.btnTranslate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTranslate.CustomBorderColor = System.Drawing.Color.Transparent;
             this.btnTranslate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnTranslate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnTranslate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTranslate.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnTranslate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTranslate.FillColor = System.Drawing.Color.Olive;
-            this.btnTranslate.FillColor2 = System.Drawing.Color.Teal;
+            this.btnTranslate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(85)))));
+            this.btnTranslate.FillColor2 = System.Drawing.Color.MediumPurple;
+            this.btnTranslate.FocusedColor = System.Drawing.Color.Transparent;
             this.btnTranslate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Bold);
             this.btnTranslate.ForeColor = System.Drawing.Color.White;
-            this.btnTranslate.Location = new System.Drawing.Point(307, 407);
+            this.btnTranslate.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
+            this.btnTranslate.Location = new System.Drawing.Point(305, 92);
+            this.btnTranslate.Margin = new System.Windows.Forms.Padding(4);
             this.btnTranslate.Name = "btnTranslate";
             this.btnTranslate.Size = new System.Drawing.Size(180, 45);
             this.btnTranslate.TabIndex = 4;
@@ -174,12 +185,48 @@ namespace ModernTranslatorTutorial
             this.btnHelp.FillColor2 = System.Drawing.Color.LightSteelBlue;
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.btnHelp.ForeColor = System.Drawing.Color.White;
-            this.btnHelp.Location = new System.Drawing.Point(736, 435);
+            this.btnHelp.Location = new System.Drawing.Point(14, 14);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(32, 32);
+            this.btnHelp.Size = new System.Drawing.Size(33, 32);
             this.btnHelp.TabIndex = 5;
             this.btnHelp.Text = "?";
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
+            // siticonePictureBox1
+            // 
+            this.siticonePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.siticonePictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.siticonePictureBox1.Image = global::ModernTranslatorTutorial.Properties.Resources.icons8_данные_в_обоих_направлениях_50;
+            this.siticonePictureBox1.ImageRotate = 0F;
+            this.siticonePictureBox1.Location = new System.Drawing.Point(374, 35);
+            this.siticonePictureBox1.Name = "siticonePictureBox1";
+            this.siticonePictureBox1.Size = new System.Drawing.Size(47, 36);
+            this.siticonePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.siticonePictureBox1.TabIndex = 6;
+            this.siticonePictureBox1.TabStop = false;
+            this.siticonePictureBox1.Click += new System.EventHandler(this.siticonePictureBox1_Click);
+            // 
+            // toolStripContainer1
+            // 
+            this.toolStripContainer1.BottomToolStripPanelVisible = false;
+            // 
+            // toolStripContainer1.ContentPanel
+            // 
+            this.toolStripContainer1.ContentPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(54)))), ((int)(((byte)(82)))));
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.cmbTargetLanguage);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.siticonePictureBox1);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.btnTranslate);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.cmbSourceLanguage);
+            this.toolStripContainer1.ContentPanel.Controls.Add(this.btnHelp);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(788, 147);
+            this.toolStripContainer1.ContentPanel.Load += new System.EventHandler(this.toolStripContainer1_ContentPanel_Load);
+            this.toolStripContainer1.LeftToolStripPanelVisible = false;
+            this.toolStripContainer1.Location = new System.Drawing.Point(-2, -2);
+            this.toolStripContainer1.Name = "toolStripContainer1";
+            this.toolStripContainer1.RightToolStripPanelVisible = false;
+            this.toolStripContainer1.Size = new System.Drawing.Size(788, 147);
+            this.toolStripContainer1.TabIndex = 7;
+            this.toolStripContainer1.Text = "toolStripContainer1";
             // 
             // Form1
             // 
@@ -189,18 +236,20 @@ namespace ModernTranslatorTutorial
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
             this.ClientSize = new System.Drawing.Size(785, 479);
+            this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.textOutput);
             this.Controls.Add(this.textInput);
-            this.Controls.Add(this.cmbTargetLanguage);
-            this.Controls.Add(this.cmbSourceLanguage);
-            this.Controls.Add(this.btnHelp);
-            this.Controls.Add(this.btnTranslate);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(304, 251);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.siticonePictureBox1)).EndInit();
+            this.toolStripContainer1.ContentPanel.ResumeLayout(false);
+            this.toolStripContainer1.ResumeLayout(false);
+            this.toolStripContainer1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -214,6 +263,8 @@ namespace ModernTranslatorTutorial
         private Siticone.Desktop.UI.WinForms.SiticoneComboBox cmbTargetLanguage;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnTranslate;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientButton btnHelp;
+        private Siticone.Desktop.UI.WinForms.SiticonePictureBox siticonePictureBox1;
+        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
     }
 }
 
