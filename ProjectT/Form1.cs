@@ -33,18 +33,21 @@ namespace ModernTranslatorTutorial
         {
             this.Size = new System.Drawing.Size(800, 520);
 
+            cmbSourceLanguage.Items.Clear();
+            cmbTargetLanguage.Items.Clear();
             textInput.BorderRadius = 20;
             textOutput.BorderRadius = 20;
             cmbSourceLanguage.BorderRadius = 17;
             cmbTargetLanguage.BorderRadius = 17;
-            cmbSourceLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
-            cmbTargetLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "zh" });
+            cmbSourceLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "it", "zh", "ko", "pl", "hu", "no", "sw", "vi"});
+            cmbTargetLanguage.Items.AddRange(new string[] { "en", "uk", "es", "fr", "de", "it", "zh", "ko", "pl", "hu", "no", "sw", "vi"});
             cmbSourceLanguage.SelectedIndex = 0;
             cmbTargetLanguage.SelectedIndex = 1;
 
+
         }
 
-        
+
         private async void btnTranslate_Click(object sender, EventArgs e)
         {
             int CharacterCount = 0;
@@ -125,6 +128,11 @@ namespace ModernTranslatorTutorial
         }
 
         private void toolStripContainer1_ContentPanel_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripContainer1_TopToolStripPanel_Click(object sender, EventArgs e)
         {
 
         }
