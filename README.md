@@ -6,6 +6,6 @@ For use just colone repo and run .exe
 ```
 git clone https://github.com/Cypher64/ConsoleTaskManager.git
 ```
-Screenshot of program
+## Screenshot of program
 
 <img width="600" height="480" alt="image" src="https://github.com/user-attachments/assets/68c996ae-bfd0-40ae-ab8c-cfdd7c88c23a" />
